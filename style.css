@@ -4,18 +4,26 @@
     font-family: 'ubuntu';
 }
 
-.titrus{
 
-    display: flex;
+.toto{
    text-align: center;
-    flex-wrap: nowrap;
-}
-
-.titrus h1{
-    display: flex;
-    font-size: 100px;
+    font-size: 80px;
+    
 
 }
+
+.toto h1{
+    font-family: 'ubuntu';
+}
+
+.tata{
+    text-align: center;
+     font-size: 50px;
+     top: 5px;
+ 
+ }
+
+
 .btn1{
     text-align: center;
 }
@@ -26,13 +34,10 @@
 
 input.visa{
     width: 100px;
-   
-    display: flex;
-    justify-content: center;
+  
 }
 
 .phone{
     width: 100px;
-    position: relative;
-    display: flex;  
+  
 }
