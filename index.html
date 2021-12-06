@@ -10,24 +10,55 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="app.js">
     <script src="https://kit.fontawesome.com/608f7bac6b.js"></script>
+    
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.js"
+			  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+			  crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div class="titrus">
+        <h1>CLeave.js</h1>
+        <h2>La librairie</h2>
+    </div>
     
-    <input class="input-phone" type="text"/>
+            <div class="btn1">
+             <p>Carte de Crédit</p>
+                <input class="visa" type="text">
+                <button id="cartec">Vérification</button>
 
+            </div>
 
-    <script>
+            <div class="btn2">
+        <p>numéro de téléphone</p>
+            <input class="phone" type="text">
+            <button id="cartoc">Vérification</button>
+        </div>
+                
+  
+  
+        
+        <script src="cleave.js"></script>
+        <script src="main.js"></script>
 
-var cleave = new Cleave('.input-phone', {
+<script src="cleave.min.js"></script>
+<script src="cleave-phone.fr.js"></script>
+
+        <script>
+
+var p_type = 'inconnue';
+var cleavep = new Cleave('.phone', {
     phone: true,
-    phoneRegionCode: '{country}'
+    phoneRegionCode: 'FR'
 });
-    </script>
 
+$('#cartoc').click(function(){
+    alert(cleavep.getFormattedValue() + ' est un ' + 'numero ' +  p_type );
+    
+})
+        </script>
 
-        <script src="cleave.min.js"></script>
-        <script src="cleave-phone.{country}.js"></script>
 </body>
 
 </html>
