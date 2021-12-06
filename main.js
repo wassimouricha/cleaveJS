@@ -17,4 +17,21 @@ $('#cartec').click(function(){
 })
 
 
+var cd_type = 'inconnue';
+var cleaved = new Cleave('.date', {
+    date: true,
+    delimiter: '-',
+    datePattern: ['Y', 'm', 'd'],
+    onCreditCardTypeChanged: function (type) {
+        console.log(type);
+        cd_type = type;
+    }
+});
+
+$('#cartuc').click(function(){
+    alert(cleave.getFormattedValue() + ' est une ' + 'date ' +  cd_type );
+    
+})
+
+
 
