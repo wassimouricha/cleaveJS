@@ -2,36 +2,36 @@
 
 
 var cc_type = 'inconnue';
-var cleave = new Cleave('.visa', {
-    creditCard: true,
-    delimiter: '-',
-    onCreditCardTypeChanged: function (type) {
-        console.log(type);
-        cc_type = type;
-    }
+// credit card
+var cleaveCarte = new Cleave('.visa', {
+    creditCard: true
 });
 
+
 $('#cartec').click(function(){
-    alert(cleave.getFormattedValue() + ' est une ' + 'carte ' +  cc_type );
+    alert(cleaveCarte.getFormattedValue() + ' est une ' + 'carte ' +  cc_type );
     
 })
 
 
-var cd_type = 'inconnue';
-var cleaved = new Cleave('.date', {
-    date: true,
+// date
+var cleaveDate = new Cleave('.date', {
+    date: true
+});
+
+var ch_type = 'valide';
+var cleavus = new Cleave('.heure', {
+    heure: true,
     delimiter: '-',
-    datePattern: ['Y', 'm', 'd'],
-    onCreditCardTypeChanged: function (type) {
+    heurePattern: ['H', 'm', 's'],
+    onCreditDateTypeChanged: function (type) {
         console.log(type);
         cd_type = type;
     }
+   
 });
 
-$('#cartuc').click(function(){
-    alert(cleave.getFormattedValue() + ' est une ' + 'date ' +  cd_type );
+$('#cartac').click(function(){
+    alert(cleave.getFormattedValue() + ' est une ' + 'heure ' +  ch_type );
     
 })
-
-
-

@@ -4,11 +4,21 @@
     font-family: 'ubuntu';
 }
 
+body{
+    display: grid;
+    width: 100%;
+    place-items: center;
+    place-content: center;
+}
 
+input{
+    margin-top: 10px  ;
+    margin-bottom: 10px  ;
+}
 .toto{
    text-align: center;
     font-size: 80px;
-    
+    margin-bottom: -150px;
 
 }
 
@@ -23,12 +33,23 @@
  
  }
 
+ .tete{
+    text-align: center;
+ }
 
 .btn1{
     text-align: center;
 }
 
 .btn2{
+    text-align: center;
+}
+
+.btn3{
+    text-align: center;
+}
+
+.btn4{
     text-align: center;
 }
 

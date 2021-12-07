@@ -23,7 +23,10 @@
         <h1>CLeave.js</h1> <br> <br>
     </div>
     <div class="tata">
-        <h2>La librairie</h2>
+        <h2>La librairie JS</h2>
+    </div>
+    <div class="tete">
+        <h2>Permettant  d'obtenir les bons formats pour vos input</h2>
     </div>
 
     </div>
@@ -37,15 +40,25 @@
 
             <div class="btn2">
         <p>numéro de téléphone</p>
+        <select id="select_country">
+            <option value="FR">FR</option>
+            <option value="GB">GB</option>
+            <option value="GE">GE</option>
+        </select>
             <input class="phone" type="text">
-            <button id="cartoc">Vérification</button>
+         
         </div>
 
         <div class="btn3">
-            <p>Date format YYYY-MM-DD</p>
+            <p>Date format MM-DD-YYYY</p>
                 <input class="date" type="text">
-                <button id="cartuc">Vérification</button>
             </div>
+
+            <div class="btn4">
+                <p>Heure format HH-MM-SS</p>
+                    <input class="heure" type="text">
+                </div>
+    
 
 
                     
@@ -55,21 +68,9 @@
         <script src="main.js"></script>
 
 <script src="cleave.min.js"></script>
-<script src="cleave-phone.fr.js"></script>
+<script src="cleave-phone.i18n.js"></script>
 
-        <script>
 
-var p_type = 'inconnue';
-var cleavep = new Cleave('.phone', {
-    phone: true,
-    phoneRegionCode: 'FR'
-});
-
-$('#cartoc').click(function(){
-    alert(cleavep.getFormattedValue() + ' est un ' + 'numero ' +  p_type );
-    
-})
-        </script>
 
 </body>
 
