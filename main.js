@@ -1,7 +1,7 @@
 
 
 
-var cc_type = 'inconnue';
+var cc_type = 'bancaire';
 // credit card
 var cleaveCarte = new Cleave('.visa', {
     creditCard: true
@@ -18,6 +18,7 @@ $('#cartec').click(function(){
 var cleaveDate = new Cleave('.date', {
     date: true
 });
+
 
 
 

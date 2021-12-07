@@ -70,7 +70,28 @@
 <script src="cleave.min.js"></script>
 <script src="cleave-phone.i18n.js"></script>
 
+        <script>
 
+var p_type = 'inconnue';
+var cleavep = new Cleave('.phone', {
+    phone: true,
+    phoneRegionCode: '{country}',
+    onCreditCardTypeChanged: function (type) {
+        console.log(type);
+        cc_type = type;
+    }
+});
+
+
+
+$('select_country').change(function(){
+cleavep.setPhoneRegionCode(this.value);
+cleavep.setRawValue('');
+
+
+
+})
+        </script>
 
 </body>
 

@@ -9,6 +9,7 @@ body{
     width: 100%;
     place-items: center;
     place-content: center;
+    background: url(wall.jpg);
 }
 
 input{
@@ -24,6 +25,7 @@ input{
 
 .toto h1{
     font-family: 'ubuntu';
+    
 }
 
 .tata{
@@ -39,6 +41,7 @@ input{
 
 .btn1{
     text-align: center;
+    
 }
 
 .btn2{
@@ -49,16 +52,35 @@ input{
     text-align: center;
 }
 
+
 .btn4{
     text-align: center;
 }
 
 input.visa{
     width: 100px;
+    box-shadow: 10px 5px 5px black;
   
 }
 
 .phone{
     width: 100px;
+    box-shadow: 10px 5px 5px black;
   
+}
+
+.date{
+    box-shadow: 10px 5px 5px black;
+}
+
+.heure{
+    box-shadow: 10px 5px 5px black;
+}
+
+#cartec{
+    box-shadow: 10px 5px 5px black;
+}
+
+select{
+    box-shadow: 5px 5px 5px black;
 }
