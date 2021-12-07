@@ -19,19 +19,12 @@ var cleaveDate = new Cleave('.date', {
     date: true
 });
 
-var ch_type = 'valide';
-var cleavus = new Cleave('.heure', {
-    heure: true,
-    delimiter: '-',
-    heurePattern: ['H', 'm', 's'],
-    onCreditDateTypeChanged: function (type) {
-        console.log(type);
-        cd_type = type;
-    }
-   
+
+
+//heure
+var cleaveHeure = new Cleave('.heure', {
+    time: true,
+    timePattern: ['h', 'm', 's']
 });
 
-$('#cartac').click(function(){
-    alert(cleave.getFormattedValue() + ' est une ' + 'heure ' +  ch_type );
-    
-})
+
